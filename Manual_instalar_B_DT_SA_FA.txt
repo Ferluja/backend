@@ -1,0 +1,5 @@
+--------------------------Instalar bootstrap-------------------
+
+Ejecutar los siguientes comandos 
+
+1. composer 
