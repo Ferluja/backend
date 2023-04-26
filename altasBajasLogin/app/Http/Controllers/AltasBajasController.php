@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Altas_bajas;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;

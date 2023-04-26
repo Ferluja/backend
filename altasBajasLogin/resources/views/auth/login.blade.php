@@ -21,7 +21,7 @@
                 <button class="btn-bootstrap">Entrar</button>
             </form>
           </p>
-          
+          <p>¿No tienes cuenta? <a href="{{ route('registrar') }}">Crear cuenta</a></p>
         </div>
       </div>
 </div>

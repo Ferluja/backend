@@ -1,5 +1,6 @@
 @extends('layouts/plantilla')
 @section('fondo')
+
 <div class="row">
     <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 position-absolute top-50 start-50 translate-middle">
         <div class="hexagon-menu clear">

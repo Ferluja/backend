@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[AuthController::class,'index'])->name('login');
+Route::get('/register',[AuthController::class,'registrar'])->name('registrar');
 Route::post('logear',[AuthController::class, 'logear'])->name('logear');
 Route::get('/user',[AltasBajasController::class,'index'])->name('AltasBajas.index');
-Route::get('/nuevoUsuario', [AuthController::class, 'agregarNuevo']);
+Route::post('/nuevoUsuario', [AuthController::class, 'agregarNuevo'])->name('agregarNuevo');
 Route::get('/logout',[AuthController::class,'logout'])->name('logout');
 Route::get('/create',[TiposCategoriasController::class,'create'])->name('AltasBajas.create');
 Route::post('/store',[AltasBajasController::class,'store'])->name('AltasBajas.store');

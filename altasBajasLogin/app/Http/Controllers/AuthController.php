@@ -32,18 +32,21 @@ class AuthController extends Controller
         Session::flush();
         return redirect()->route('login');
     }
-    public function agregarNuevo(){
+    public function agregarNuevo(Request $request){
         $item = new User();
-        $item->name = 'fer';
-        $item->password = Hash::make('12345');
+        $item->name = $request->name;
+        $item->password = Hash::make($request->password);
         $item->save();
-        return $item;
+        return view('auth/login');
     }
     public function __construct(){
         $this->middleware(['auth'])->only(['inSession']);
     }
     public function inSession(){
         return view('welcome');        
+    }
+    public function registrar(){
+        return view('auth/register');
     }
 
 }
